@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Event
-%define		pnam	Event
+%define	pdir	Event
+%define	pnam	Event
 Summary:	Event - a generic Perl event loop
 Summary(pl):	Event - ogólna pêtla zdarzeñ dla Perla
 Name:		perl-Event
