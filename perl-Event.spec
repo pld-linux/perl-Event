@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Event
 %define		pnam	Event
@@ -30,7 +34,8 @@ prostej i zoptymalizowanej pêtli zdarzeñ.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
-#%%{__make} test
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
