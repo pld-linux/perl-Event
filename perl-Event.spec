@@ -19,7 +19,7 @@ Summary(sv):	Event Perlmodul
 Summary(uk):	Модуль для Perl Event
 Summary(zh_CN):	Event Perl дё©И
 Name:		perl-Event
-Version:	0.86
+Version:	0.87
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
