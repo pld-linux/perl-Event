@@ -10,7 +10,7 @@ Summary(fr):	Module Perl Event
 Summary(it):	Modulo di Perl Event
 Summary(ja):	Event Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	Event ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul Event
+Summary(nb):	Perlmodul Event
 Summary(pl):	Modu³ Perla Event
 Summary(pt):	Módulo de Perl Event
 Summary(pt_BR):	Módulo Perl Event
@@ -57,7 +57,7 @@ Event Perl ¥â¥¸¥å¡¼¥ë
 %description -l ko
 Event ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 Perlmodul Event.
 
 %description -l pl
