@@ -20,11 +20,11 @@ Summary(uk):	Модуль для Perl Event
 Summary(zh_CN):	Event Perl дё©И
 Name:		perl-Event
 Version:	0.87
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -85,7 +85,8 @@ Event Perl дё©И
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 #%%{__make} test
 
@@ -101,9 +102,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ANNOUNCE ChangeLog README TODO
 
-%{perl_sitearch}/Event.pm
-%{perl_sitearch}/Event
-%dir %{perl_sitearch}/auto/Event
-%{perl_sitearch}/auto/Event/*.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Event/*.so
+%{perl_vendorarch}/Event.pm
+%{perl_vendorarch}/Event
+%dir %{perl_vendorarch}/auto/Event
+%{perl_vendorarch}/auto/Event/*.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Event/*.so
 %{_mandir}/man3/*
