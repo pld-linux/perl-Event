@@ -6,7 +6,7 @@
 %define		pdir	Event
 %define		pnam	Event
 Summary:	Event - a generic Perl event loop
-Summary(pl):	Event - ogólna pêtla zdarzeñ dla Perla
+Summary(pl.UTF-8):   Event - ogÃ³lna pÄ™tla zdarzeÅ„ dla Perla
 Name:		perl-Event
 Version:	1.06
 Release:	0.1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The Event extension aims to provide an simple and optimized event
 loop for a broad class of applications.
 
-%description -l pl
-Rozszerzenie Event ma na celu udostêpnienie szerokiej klasie aplikacji
-prostej i zoptymalizowanej pêtli zdarzeñ.
+%description -l pl.UTF-8
+Rozszerzenie Event ma na celu udostÄ™pnienie szerokiej klasie aplikacji
+prostej i zoptymalizowanej pÄ™tli zdarzeÅ„.
 
 %prep
 %setup -q -n %{pnam}-%{version}
