@@ -6,7 +6,7 @@
 %define		pdir	Event
 %define		pnam	Event
 Summary:	Event - a generic Perl event loop
-Summary(pl.UTF-8):   Event - ogólna pętla zdarzeń dla Perla
+Summary(pl.UTF-8):	Event - ogólna pętla zdarzeń dla Perla
 Name:		perl-Event
 Version:	1.06
 Release:	0.1
