@@ -46,16 +46,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorarch}/Event.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc ANNOUNCE ChangeLog README TODO
-
 %{perl_vendorarch}/Event.pm
 %{perl_vendorarch}/Event
 %dir %{perl_vendorarch}/auto/Event
-%{perl_vendorarch}/auto/Event/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Event/*.so
-%{_mandir}/man3/*
+%{perl_vendorarch}/auto/Event/Event.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Event/Event.so
+%{_mandir}/man3/Event*.3pm*
