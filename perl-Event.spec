@@ -8,13 +8,13 @@
 Summary:	Event - a generic Perl event loop
 Summary(pl.UTF-8):	Event - ogólna pętla zdarzeń dla Perla
 Name:		perl-Event
-Version:	1.13
-Release:	4
+Version:	1.20
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Event/%{pnam}-%{version}.tar.gz
-# Source0-md5:	88cf5bb6b4b06e016072a5ff2ff8fa1a
+# Source0-md5:	bdbdf6c1b235c3e13c25f3b0491c5134
 URL:		http://search.cpan.org/dist/Event/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
