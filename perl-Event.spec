@@ -57,6 +57,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Event.pm
 %{perl_vendorarch}/Event
 %dir %{perl_vendorarch}/auto/Event
-%{perl_vendorarch}/auto/Event/Event.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Event/Event.so
 %{_mandir}/man3/Event*.3pm*
